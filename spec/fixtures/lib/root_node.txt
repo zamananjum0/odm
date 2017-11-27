@@ -1,0 +1,1 @@
+<ODM Description="Odm" FileType="Snapshot" Granularity="Metadata" FileOID="___OID___" ODMVersion="1.3.2" Originator="assero" SourceSystem="system_name" SourceSystemVersion="system_version" CreationDateTime="___CREATION___"/>

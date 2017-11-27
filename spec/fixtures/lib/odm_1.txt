@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<ODM xmlns="http://www.cdisc.org/ns/odm/v1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" Description="ODM-Test" FileType="Snapshot" Granularity="Metadata" FileOID="___OID___" ODMVersion="1.3.2" Originator="Assero" SourceSystem="Glandon" SourceSystemVersion="1.0.4" CreationDateTime="___CREATION___">
+  <Study OID="S-TEST">
+    <GlobalVariables>
+      <StudyName>Form Export Test</StudyName>
+      <StudyDescription>Not applicable. Single form export.</StudyDescription>
+      <ProtocolName>Not applicable. Single form export.</ProtocolName>
+    </GlobalVariables>
+    <MetaDataVersion OID="MDV-TEST" Name="Metadata for test" Description="Not applicable. Single form export.">
+      <Protocol>
+        <StudyEventRef StudyEventOID="SE-TEST" OrderNumber="1" Mandatory="Yes"/>
+      </Protocol>
+      <StudyEventDef OID="SE-TEST" Name="Not applicable. Single form export." Repeating="No" Type="Scheduled">
+        <FormRef FormOID="FORM1" OrderNumber="1" Mandatory="Yes"/>
+      </StudyEventDef>
+      <FormDef OID="FORM1" Name="Form" Repeating="No">
+        <ItemGroupRef ItemGroupOID="GROUP1" OrderNumber="1" Mandatory="No"/>
+        <ItemGroupRef ItemGroupOID="GROUP2" OrderNumber="2" Mandatory="No"/>
+        <ItemGroupRef ItemGroupOID="GROUP3" OrderNumber="3" Mandatory="No"/>
+      </FormDef>
+      <ItemGroupDef OID="GROUP1" Name="GROUP1" Repeating="No">
+        <ItemRef ItemOID="GROUP1_ITEM1" OrderNumber="1" Mandatory="No"/>
+        <ItemRef ItemOID="GROUP1_ITEM2" OrderNumber="2" Mandatory="No"/>
+        <ItemRef ItemOID="GROUP1_ITEM3" OrderNumber="3" Mandatory="No"/>
+      </ItemGroupDef>
+      <ItemGroupDef OID="GROUP2" Name="GROUP2" Repeating="No">
+        <ItemRef ItemOID="GROUP2_ITEM1" OrderNumber="1" Mandatory="No"/>
+        <ItemRef ItemOID="GROUP2_ITEM2" OrderNumber="2" Mandatory="No"/>
+        <ItemRef ItemOID="GROUP2_ITEM3" OrderNumber="3" Mandatory="No"/>
+      </ItemGroupDef>
+      <ItemGroupDef OID="GROUP3" Name="GROUP3" Repeating="No">
+        <ItemRef ItemOID="GROUP3_ITEM1" OrderNumber="1" Mandatory="No"/>
+        <ItemRef ItemOID="GROUP3_ITEM2" OrderNumber="2" Mandatory="No"/>
+        <ItemRef ItemOID="GROUP3_ITEM3" OrderNumber="3" Mandatory="No"/>
+      </ItemGroupDef>
+      <ItemDef OID="GROUP1_ITEM1" Name="ITEM1" DataType="integer" Length="3">
+        <Question>
+          <TranslatedText xml:lang="en">Question text</TranslatedText>
+        </Question>
+        <CodeListRef CodeListOID="GROUP1_ITEM1_CL"/>
+      </ItemDef>
+      <ItemDef OID="GROUP1_ITEM2" Name="ITEM2" DataType="integer" Length="3">
+        <Question>
+          <TranslatedText xml:lang="en">Question text</TranslatedText>
+        </Question>
+        <CodeListRef CodeListOID="GROUP1_ITEM2_CL"/>
+      </ItemDef>
+      <ItemDef OID="GROUP1_ITEM3" Name="ITEM3" DataType="integer" Length="3">
+        <Question>
+          <TranslatedText xml:lang="en">Question text</TranslatedText>
+        </Question>
+        <CodeListRef CodeListOID="GROUP1_ITEM3_CL"/>
+      </ItemDef>
+      <ItemDef OID="GROUP2_ITEM1" Name="ITEM1" DataType="integer" Length="3">
+        <Question>
+          <TranslatedText xml:lang="en">Question text</TranslatedText>
+        </Question>
+        <CodeListRef CodeListOID="GROUP2_ITEM1_CL"/>
+      </ItemDef>
+      <ItemDef OID="GROUP2_ITEM2" Name="ITEM2" DataType="integer" Length="3">
+        <Question>
+          <TranslatedText xml:lang="en">Question text</TranslatedText>
+        </Question>
+        <CodeListRef CodeListOID="GROUP2_ITEM2_CL"/>
+      </ItemDef>
+      <ItemDef OID="GROUP2_ITEM3" Name="ITEM3" DataType="integer" Length="3">
+        <Question>
+          <TranslatedText xml:lang="en">Question text</TranslatedText>
+        </Question>
+        <CodeListRef CodeListOID="GROUP2_ITEM3_CL"/>
+      </ItemDef>
+      <ItemDef OID="GROUP3_ITEM1" Name="ITEM1" DataType="integer" Length="3">
+        <Question>
+          <TranslatedText xml:lang="en">Question text</TranslatedText>
+        </Question>
+        <CodeListRef CodeListOID="GROUP3_ITEM1_CL"/>
+      </ItemDef>
+      <ItemDef OID="GROUP3_ITEM2" Name="ITEM2" DataType="integer" Length="3">
+        <Question>
+          <TranslatedText xml:lang="en">Question text</TranslatedText>
+        </Question>
+        <CodeListRef CodeListOID="GROUP3_ITEM2_CL"/>
+      </ItemDef>
+      <ItemDef OID="GROUP3_ITEM3" Name="ITEM3" DataType="integer" Length="3">
+        <Question>
+          <TranslatedText xml:lang="en">Question text</TranslatedText>
+        </Question>
+        <CodeListRef CodeListOID="GROUP3_ITEM3_CL"/>
+      </ItemDef>
+      <CodeList OID="GROUP1_ITEM1_CL" Name="Code list for GROUP1_ITEM1" DataType="text">
+        <CodeListItem CodedValue="GROUP1_ITEM1_CL_CLI1" OrderNumber="1">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI1_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+        <CodeListItem CodedValue="GROUP1_ITEM1_CL_CLI2" OrderNumber="2">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI2_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+        <CodeListItem CodedValue="GROUP1_ITEM1_CL_CLI3" OrderNumber="3">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI3_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+      </CodeList>
+      <CodeList OID="GROUP1_ITEM2_CL" Name="Code list for GROUP1_ITEM2" DataType="text">
+        <CodeListItem CodedValue="GROUP1_ITEM2_CL_CLI1" OrderNumber="1">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI1_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+        <CodeListItem CodedValue="GROUP1_ITEM2_CL_CLI2" OrderNumber="2">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI2_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+        <CodeListItem CodedValue="GROUP1_ITEM2_CL_CLI3" OrderNumber="3">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI3_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+      </CodeList>
+      <CodeList OID="GROUP1_ITEM3_CL" Name="Code list for GROUP1_ITEM3" DataType="text">
+        <CodeListItem CodedValue="GROUP1_ITEM3_CL_CLI1" OrderNumber="1">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI1_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+        <CodeListItem CodedValue="GROUP1_ITEM3_CL_CLI2" OrderNumber="2">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI2_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+        <CodeListItem CodedValue="GROUP1_ITEM3_CL_CLI3" OrderNumber="3">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI3_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+      </CodeList>
+      <CodeList OID="GROUP2_ITEM1_CL" Name="Code list for GROUP2_ITEM1" DataType="text">
+        <CodeListItem CodedValue="GROUP2_ITEM1_CL_CLI1" OrderNumber="1">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI1_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+        <CodeListItem CodedValue="GROUP2_ITEM1_CL_CLI2" OrderNumber="2">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI2_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+        <CodeListItem CodedValue="GROUP2_ITEM1_CL_CLI3" OrderNumber="3">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI3_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+      </CodeList>
+      <CodeList OID="GROUP2_ITEM2_CL" Name="Code list for GROUP2_ITEM2" DataType="text">
+        <CodeListItem CodedValue="GROUP2_ITEM2_CL_CLI1" OrderNumber="1">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI1_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+        <CodeListItem CodedValue="GROUP2_ITEM2_CL_CLI2" OrderNumber="2">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI2_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+        <CodeListItem CodedValue="GROUP2_ITEM2_CL_CLI3" OrderNumber="3">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI3_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+      </CodeList>
+      <CodeList OID="GROUP2_ITEM3_CL" Name="Code list for GROUP2_ITEM3" DataType="text">
+        <CodeListItem CodedValue="GROUP2_ITEM3_CL_CLI1" OrderNumber="1">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI1_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+        <CodeListItem CodedValue="GROUP2_ITEM3_CL_CLI2" OrderNumber="2">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI2_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+        <CodeListItem CodedValue="GROUP2_ITEM3_CL_CLI3" OrderNumber="3">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI3_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+      </CodeList>
+      <CodeList OID="GROUP3_ITEM1_CL" Name="Code list for GROUP3_ITEM1" DataType="text">
+        <CodeListItem CodedValue="GROUP3_ITEM1_CL_CLI1" OrderNumber="1">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI1_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+        <CodeListItem CodedValue="GROUP3_ITEM1_CL_CLI2" OrderNumber="2">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI2_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+        <CodeListItem CodedValue="GROUP3_ITEM1_CL_CLI3" OrderNumber="3">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI3_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+      </CodeList>
+      <CodeList OID="GROUP3_ITEM2_CL" Name="Code list for GROUP3_ITEM2" DataType="text">
+        <CodeListItem CodedValue="GROUP3_ITEM2_CL_CLI1" OrderNumber="1">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI1_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+        <CodeListItem CodedValue="GROUP3_ITEM2_CL_CLI2" OrderNumber="2">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI2_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+        <CodeListItem CodedValue="GROUP3_ITEM2_CL_CLI3" OrderNumber="3">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI3_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+      </CodeList>
+      <CodeList OID="GROUP3_ITEM3_CL" Name="Code list for GROUP3_ITEM3" DataType="text">
+        <CodeListItem CodedValue="GROUP3_ITEM3_CL_CLI1" OrderNumber="1">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI1_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+        <CodeListItem CodedValue="GROUP3_ITEM3_CL_CLI2" OrderNumber="2">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI2_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+        <CodeListItem CodedValue="GROUP3_ITEM3_CL_CLI3" OrderNumber="3">
+          <Decode>
+            <TranslatedText xml:lang="en">CLI3_label</TranslatedText>
+          </Decode>
+        </CodeListItem>
+      </CodeList>
+    </MetaDataVersion>
+  </Study>
+</ODM>
